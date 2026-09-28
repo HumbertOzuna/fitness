@@ -4,14 +4,14 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="theme-color" content="#0e1116">
-<meta name="description" content="Fierro & Fuego — rutina full body, registro de series, progreso y nutrición.">
+<meta name="description" content="The Ultimate Fitness Plan — rutina full body, registro de series, progreso y nutrición.">
 <style>
   :root{color-scheme:light;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
   html,body{margin:0;height:100%}
   img{max-width:100%}
   [hidden]{display:none!important}
 </style>
-<title>Fierro & Fuego</title>
+<title>The Ultimate Fitness Plan</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&family=Barlow+Semi+Condensed:wght@600;700&display=swap">
@@ -235,10 +235,10 @@
     <div class="top-in">
       <div class="brand">
         <svg class="flame" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-          <path d="M12 2c1 3-1.5 4.2-1.5 6.5 0 1.4 1 2.3 1 2.3s.6-1 .4-2.6c1.7 1.2 3.6 3.4 3.6 6.3A5.5 5.5 0 0 1 12 20a5.6 5.6 0 0 1-5.6-5.6c0-1.7.8-3 .8-3s.3 1 .9 1.5C7.8 9.4 11 8.3 12 2Z" fill="var(--accent)"/>
+          <path d="M3.4 9.2v5.6M6.4 6.3v11.4M17.6 6.3v11.4M20.6 9.2v5.6M6.4 12h11.2" stroke="var(--accent)" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
         </svg>
         <div>
-          <h1>Fierro &amp; Fuego</h1>
+          <h1>Ultimate Fitness</h1>
           <div class="sub" id="brandSub">Full body · Recomp</div>
         </div>
       </div>
@@ -351,6 +351,22 @@
         </div>
       </div>
 
+      <h2 class="sec">Snacks si tenés hambre</h2>
+      <div class="card pad">
+        <div class="muted" style="font-size:12.5px;margin-bottom:6px">Opciones para el hambre entre comidas, sin romper la dieta. Elegí las de proteína primero: sacian más.</div>
+        <div class="hist">
+          <div class="h"><span>2 huevos duros</span><b>~13 g prot</b></div>
+          <div class="h"><span>Yogur natural + 1 fruta</span><b>~12 g prot</b></div>
+          <div class="h"><span>Atún en lata + galletas integrales</span><b>~20 g prot</b></div>
+          <div class="h"><span>Queso Paraguay en cubos + tomate</span><b>~12 g prot</b></div>
+          <div class="h"><span>Licuado de leche + fruta</span><b>~10 g prot</b></div>
+          <div class="h"><span>Banana + 1 cda de maní</span><b>pre-entreno</b></div>
+          <div class="h"><span>Puñado de maní o semillas (30 g)</span><b>sacia</b></div>
+          <div class="h"><span>Fruta: mandarina, manzana, mamón</span><b>libre</b></div>
+          <div class="h"><span>Zanahoria/pepino o pororó casero sin manteca</span><b>bajo en calorías</b></div>
+        </div>
+      </div>
+
       <h2 class="sec">Notas del nutri</h2>
       <div class="card pad stack" style="font-size:13.5px">
         <div><b>Pre-fútbol.</b> Los días que jugás, sumá una fruta o un puñado de arroz extra antes; el gasto es mayor y no querés perder músculo.</div>
@@ -401,7 +417,7 @@
       <div style="text-align:center;margin-top:18px">
         <button class="btn ghost" style="width:auto;padding:11px 18px;color:var(--accent-ink)" id="resetBtn">Borrar todos los datos</button>
       </div>
-      <div class="muted" style="font-size:11px;text-align:center;margin-top:14px">Fierro &amp; Fuego</div>
+      <div class="muted" style="font-size:11px;text-align:center;margin-top:14px">The Ultimate Fitness Plan</div>
     </section>
   </main>
 
@@ -447,9 +463,9 @@ const TOTAL_SETS = EXERCISES.reduce((a,e)=>a+e.sets,0);
 
 const MEALS = [
   {id:'desayuno', n:'Desayuno', t:'8–10 h', options:[
-    {items:'3 huevos revueltos + 80 g avena con leche + 1 banana', prot:34},
-    {items:'Tortilla de 3 huevos con queso Paraguay + 2 tostadas integrales + 1 fruta', prot:32},
-    {items:'Yogur natural (250 g) + avena/granola + banana + 2 huevos duros', prot:33},
+    {items:'3 huevos revueltos + 80 g avena con leche + 1 banana + café con leche', prot:36},
+    {items:'Tortilla de 3 huevos con queso Paraguay + 2 tostadas integrales + 1 fruta + café con leche', prot:35},
+    {items:'Yogur natural (250 g) + avena/granola + banana + 2 huevos duros + café con leche', prot:36},
     {items:'Mbejú con queso + 2 huevos + café con leche', prot:28},
   ]},
   {id:'almuerzo', n:'Almuerzo', t:'~13 h', options:[
